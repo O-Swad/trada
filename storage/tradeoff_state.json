@@ -1,0 +1,2828 @@
+{
+  "version": 2,
+  "active_study_id": "study_d71886c7",
+  "studies": [
+    {
+      "id": "study_legacy",
+      "name": "ANALYSIS Platform as a Service for CMS",
+      "description": "Editable baseline to compare architecture options across scenarios and reusable analysis profiles.",
+      "updated_at": "2026-03-25T16:33:03+00:00",
+      "payload": {
+        "project_name": "ANALYSIS Platform as a Service for CMS",
+        "project_description": "Editable baseline to compare architecture options across scenarios and reusable analysis profiles.",
+        "alternatives": [
+          {
+            "id": "alt_paas",
+            "name": "PaaS",
+            "description": "Platform-centric option with managed runtime capabilities."
+          },
+          {
+            "id": "alt_non_paas",
+            "name": "No PaaS",
+            "description": "Self-managed stack with tighter operational control."
+          }
+        ],
+        "attributes": [
+          {
+            "id": "attr_evolvability",
+            "name": "Evolvability",
+            "description": "Ease of extension and change over time."
+          },
+          {
+            "id": "attr_time_to_field",
+            "name": "Time to Field",
+            "description": "Ability to deliver capability quickly."
+          },
+          {
+            "id": "attr_certification_fit",
+            "name": "Certification Fit",
+            "description": "Alignment with DAL-E evidence and certification activities."
+          },
+          {
+            "id": "attr_operability",
+            "name": "Operability",
+            "description": "Supportability, observability, and operational resilience."
+          },
+          {
+            "id": "attr_sovereignty",
+            "name": "Sovereignty",
+            "description": "Control over deployment, runtime, and restricted environments."
+          }
+        ],
+        "scenarios": [
+          {
+            "id": "scenario_growth",
+            "name": "Capability Growth",
+            "description": "Frequent feature evolution and adaptation.",
+            "weight": 0.35
+          },
+          {
+            "id": "scenario_delivery",
+            "name": "Rapid Delivery",
+            "description": "Compressed delivery timeline and pressure on speed.",
+            "weight": 0.25
+          },
+          {
+            "id": "scenario_sovereign",
+            "name": "Sovereign Operations",
+            "description": "Control, certification rigor, and deployment sovereignty.",
+            "weight": 0.4
+          }
+        ],
+        "profiles": [
+          {
+            "id": "profile_risk_averse",
+            "name": "Risk Aversion",
+            "description": "Favors control, certification fit, and operational predictability."
+          },
+          {
+            "id": "profile_future_proof",
+            "name": "Future Proof",
+            "description": "Favors evolvability, fast capability growth, and long-term adaptability."
+          }
+        ],
+        "weights": [
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_growth",
+            "attribute_id": "attr_evolvability",
+            "global_weight": 0.55,
+            "local_weight": 0.6
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_growth",
+            "attribute_id": "attr_time_to_field",
+            "global_weight": 0.45,
+            "local_weight": 0.45
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_growth",
+            "attribute_id": "attr_certification_fit",
+            "global_weight": 0.9,
+            "local_weight": 0.8
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_growth",
+            "attribute_id": "attr_operability",
+            "global_weight": 0.75,
+            "local_weight": 0.7
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_growth",
+            "attribute_id": "attr_sovereignty",
+            "global_weight": 0.85,
+            "local_weight": 0.75
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_delivery",
+            "attribute_id": "attr_evolvability",
+            "global_weight": 0.45,
+            "local_weight": 0.45
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_delivery",
+            "attribute_id": "attr_time_to_field",
+            "global_weight": 0.5,
+            "local_weight": 0.55
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_delivery",
+            "attribute_id": "attr_certification_fit",
+            "global_weight": 0.85,
+            "local_weight": 0.75
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_delivery",
+            "attribute_id": "attr_operability",
+            "global_weight": 0.75,
+            "local_weight": 0.7
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_delivery",
+            "attribute_id": "attr_sovereignty",
+            "global_weight": 0.8,
+            "local_weight": 0.7
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_sovereign",
+            "attribute_id": "attr_evolvability",
+            "global_weight": 0.4,
+            "local_weight": 0.45
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_sovereign",
+            "attribute_id": "attr_time_to_field",
+            "global_weight": 0.35,
+            "local_weight": 0.4
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_sovereign",
+            "attribute_id": "attr_certification_fit",
+            "global_weight": 0.98,
+            "local_weight": 0.95
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_sovereign",
+            "attribute_id": "attr_operability",
+            "global_weight": 0.8,
+            "local_weight": 0.8
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_sovereign",
+            "attribute_id": "attr_sovereignty",
+            "global_weight": 1.0,
+            "local_weight": 0.98
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_growth",
+            "attribute_id": "attr_evolvability",
+            "global_weight": 0.98,
+            "local_weight": 0.95
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_growth",
+            "attribute_id": "attr_time_to_field",
+            "global_weight": 0.75,
+            "local_weight": 0.7
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_growth",
+            "attribute_id": "attr_certification_fit",
+            "global_weight": 0.45,
+            "local_weight": 0.5
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_growth",
+            "attribute_id": "attr_operability",
+            "global_weight": 0.7,
+            "local_weight": 0.65
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_growth",
+            "attribute_id": "attr_sovereignty",
+            "global_weight": 0.5,
+            "local_weight": 0.55
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_delivery",
+            "attribute_id": "attr_evolvability",
+            "global_weight": 0.85,
+            "local_weight": 0.8
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_delivery",
+            "attribute_id": "attr_time_to_field",
+            "global_weight": 0.92,
+            "local_weight": 0.9
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_delivery",
+            "attribute_id": "attr_certification_fit",
+            "global_weight": 0.4,
+            "local_weight": 0.45
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_delivery",
+            "attribute_id": "attr_operability",
+            "global_weight": 0.72,
+            "local_weight": 0.7
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_delivery",
+            "attribute_id": "attr_sovereignty",
+            "global_weight": 0.42,
+            "local_weight": 0.45
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_sovereign",
+            "attribute_id": "attr_evolvability",
+            "global_weight": 0.7,
+            "local_weight": 0.7
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_sovereign",
+            "attribute_id": "attr_time_to_field",
+            "global_weight": 0.5,
+            "local_weight": 0.5
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_sovereign",
+            "attribute_id": "attr_certification_fit",
+            "global_weight": 0.65,
+            "local_weight": 0.7
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_sovereign",
+            "attribute_id": "attr_operability",
+            "global_weight": 0.72,
+            "local_weight": 0.75
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_sovereign",
+            "attribute_id": "attr_sovereignty",
+            "global_weight": 0.58,
+            "local_weight": 0.65
+          }
+        ],
+        "scores": [
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_growth",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_evolvability",
+            "score": 4.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_growth",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_time_to_field",
+            "score": 5.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_growth",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_certification_fit",
+            "score": 2.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_growth",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_operability",
+            "score": 4.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_growth",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_sovereignty",
+            "score": 2.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_growth",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_evolvability",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_growth",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_time_to_field",
+            "score": 2.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_growth",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_certification_fit",
+            "score": 5.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_growth",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_operability",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_growth",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_sovereignty",
+            "score": 5.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_delivery",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_evolvability",
+            "score": 4.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_delivery",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_time_to_field",
+            "score": 5.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_delivery",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_certification_fit",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_delivery",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_operability",
+            "score": 4.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_delivery",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_sovereignty",
+            "score": 2.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_delivery",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_evolvability",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_delivery",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_time_to_field",
+            "score": 2.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_delivery",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_certification_fit",
+            "score": 5.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_delivery",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_operability",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_delivery",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_sovereignty",
+            "score": 5.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_sovereign",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_evolvability",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_sovereign",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_time_to_field",
+            "score": 4.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_sovereign",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_certification_fit",
+            "score": 2.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_sovereign",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_operability",
+            "score": 4.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_sovereign",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_sovereignty",
+            "score": 2.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_sovereign",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_evolvability",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_sovereign",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_time_to_field",
+            "score": 2.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_sovereign",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_certification_fit",
+            "score": 5.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_sovereign",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_operability",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_sovereign",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_sovereignty",
+            "score": 5.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_growth",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_evolvability",
+            "score": 5.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_growth",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_time_to_field",
+            "score": 5.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_growth",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_certification_fit",
+            "score": 2.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_growth",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_operability",
+            "score": 4.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_growth",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_sovereignty",
+            "score": 2.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_growth",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_evolvability",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_growth",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_time_to_field",
+            "score": 2.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_growth",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_certification_fit",
+            "score": 4.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_growth",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_operability",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_growth",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_sovereignty",
+            "score": 5.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_delivery",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_evolvability",
+            "score": 5.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_delivery",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_time_to_field",
+            "score": 5.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_delivery",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_certification_fit",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_delivery",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_operability",
+            "score": 4.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_delivery",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_sovereignty",
+            "score": 2.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_delivery",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_evolvability",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_delivery",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_time_to_field",
+            "score": 2.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_delivery",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_certification_fit",
+            "score": 4.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_delivery",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_operability",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_delivery",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_sovereignty",
+            "score": 5.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_sovereign",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_evolvability",
+            "score": 4.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_sovereign",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_time_to_field",
+            "score": 4.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_sovereign",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_certification_fit",
+            "score": 2.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_sovereign",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_operability",
+            "score": 4.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_sovereign",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_sovereignty",
+            "score": 2.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_sovereign",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_evolvability",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_sovereign",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_time_to_field",
+            "score": 2.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_sovereign",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_certification_fit",
+            "score": 5.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_sovereign",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_operability",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_sovereign",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_sovereignty",
+            "score": 5.0
+          }
+        ],
+        "formulas": [
+          {
+            "id": "formula_abs",
+            "name": "Architectural Benefit Score",
+            "latex": "abs",
+            "description": "ABS for one profile and scenario.",
+            "builtin": true
+          },
+          {
+            "id": "formula_weighted_abs",
+            "name": "Scenario Weighted ABS",
+            "latex": "weighted_abs",
+            "description": "ABS multiplied by normalized scenario weight.",
+            "builtin": true
+          }
+        ],
+        "active_profile_id": "profile_risk_averse",
+        "active_scenario_id": "scenario_growth",
+        "active_attribute_id": "attr_evolvability"
+      },
+      "result_snapshot": {
+        "aggregate_results": [
+          {
+            "alternative": "No PaaS",
+            "aggregate_value": 10.5131,
+            "aggregate_display": "10.51",
+            "breakdown": "Capability Growth: 3.42 | Rapid Delivery: 2.18 | Sovereign Operations: 4.92"
+          },
+          {
+            "alternative": "PaaS",
+            "aggregate_value": 7.3238,
+            "aggregate_display": "7.32",
+            "breakdown": "Capability Growth: 2.50 | Rapid Delivery: 1.83 | Sovereign Operations: 2.99"
+          }
+        ],
+        "scenario_results": [
+          {
+            "scenario": "Capability Growth",
+            "alternative": "PaaS",
+            "scenario_weight": "0.35",
+            "normalized_scenario_weight": "0.35",
+            "abs_value": 7.1475,
+            "abs_display": "7.15",
+            "weighted_abs_value": 2.5016,
+            "weighted_abs_display": "2.50",
+            "formula_summary": "Architectural Benefit Score: 7.15 | Scenario Weighted ABS: 2.50"
+          },
+          {
+            "scenario": "Capability Growth",
+            "alternative": "No PaaS",
+            "scenario_weight": "0.35",
+            "normalized_scenario_weight": "0.35",
+            "abs_value": 9.7575,
+            "abs_display": "9.76",
+            "weighted_abs_value": 3.4151,
+            "weighted_abs_display": "3.42",
+            "formula_summary": "Architectural Benefit Score: 9.76 | Scenario Weighted ABS: 3.42"
+          },
+          {
+            "scenario": "Rapid Delivery",
+            "alternative": "PaaS",
+            "scenario_weight": "0.25",
+            "normalized_scenario_weight": "0.25",
+            "abs_value": 7.3175,
+            "abs_display": "7.32",
+            "weighted_abs_value": 1.8294,
+            "weighted_abs_display": "1.83",
+            "formula_summary": "Architectural Benefit Score: 7.32 | Scenario Weighted ABS: 1.83"
+          },
+          {
+            "scenario": "Rapid Delivery",
+            "alternative": "No PaaS",
+            "scenario_weight": "0.25",
+            "normalized_scenario_weight": "0.25",
+            "abs_value": 8.72,
+            "abs_display": "8.72",
+            "weighted_abs_value": 2.18,
+            "weighted_abs_display": "2.18",
+            "formula_summary": "Architectural Benefit Score: 8.72 | Scenario Weighted ABS: 2.18"
+          },
+          {
+            "scenario": "Sovereign Operations",
+            "alternative": "PaaS",
+            "scenario_weight": "0.40",
+            "normalized_scenario_weight": "0.40",
+            "abs_value": 7.482,
+            "abs_display": "7.48",
+            "weighted_abs_value": 2.9928,
+            "weighted_abs_display": "2.99",
+            "formula_summary": "Architectural Benefit Score: 7.48 | Scenario Weighted ABS: 2.99"
+          },
+          {
+            "scenario": "Sovereign Operations",
+            "alternative": "No PaaS",
+            "scenario_weight": "0.40",
+            "normalized_scenario_weight": "0.40",
+            "abs_value": 12.295,
+            "abs_display": "12.29",
+            "weighted_abs_value": 4.918,
+            "weighted_abs_display": "4.92",
+            "formula_summary": "Architectural Benefit Score: 12.29 | Scenario Weighted ABS: 4.92"
+          }
+        ],
+        "configured_variables": [
+          {
+            "scenario": "Capability Growth",
+            "alternative": "PaaS",
+            "attribute": "Evolvability",
+            "scenario_weight": "0.35",
+            "global_weight": "0.55",
+            "local_weight": "0.60",
+            "effective_weight": "0.33",
+            "score": "4.00",
+            "contribution": "1.32"
+          },
+          {
+            "scenario": "Capability Growth",
+            "alternative": "PaaS",
+            "attribute": "Time to Field",
+            "scenario_weight": "0.35",
+            "global_weight": "0.45",
+            "local_weight": "0.45",
+            "effective_weight": "0.20",
+            "score": "5.00",
+            "contribution": "1.01"
+          },
+          {
+            "scenario": "Capability Growth",
+            "alternative": "PaaS",
+            "attribute": "Certification Fit",
+            "scenario_weight": "0.35",
+            "global_weight": "0.90",
+            "local_weight": "0.80",
+            "effective_weight": "0.72",
+            "score": "2.00",
+            "contribution": "1.44"
+          },
+          {
+            "scenario": "Capability Growth",
+            "alternative": "PaaS",
+            "attribute": "Operability",
+            "scenario_weight": "0.35",
+            "global_weight": "0.75",
+            "local_weight": "0.70",
+            "effective_weight": "0.53",
+            "score": "4.00",
+            "contribution": "2.10"
+          },
+          {
+            "scenario": "Capability Growth",
+            "alternative": "PaaS",
+            "attribute": "Sovereignty",
+            "scenario_weight": "0.35",
+            "global_weight": "0.85",
+            "local_weight": "0.75",
+            "effective_weight": "0.64",
+            "score": "2.00",
+            "contribution": "1.27"
+          },
+          {
+            "scenario": "Capability Growth",
+            "alternative": "No PaaS",
+            "attribute": "Evolvability",
+            "scenario_weight": "0.35",
+            "global_weight": "0.55",
+            "local_weight": "0.60",
+            "effective_weight": "0.33",
+            "score": "3.00",
+            "contribution": "0.99"
+          },
+          {
+            "scenario": "Capability Growth",
+            "alternative": "No PaaS",
+            "attribute": "Time to Field",
+            "scenario_weight": "0.35",
+            "global_weight": "0.45",
+            "local_weight": "0.45",
+            "effective_weight": "0.20",
+            "score": "2.00",
+            "contribution": "0.41"
+          },
+          {
+            "scenario": "Capability Growth",
+            "alternative": "No PaaS",
+            "attribute": "Certification Fit",
+            "scenario_weight": "0.35",
+            "global_weight": "0.90",
+            "local_weight": "0.80",
+            "effective_weight": "0.72",
+            "score": "5.00",
+            "contribution": "3.60"
+          },
+          {
+            "scenario": "Capability Growth",
+            "alternative": "No PaaS",
+            "attribute": "Operability",
+            "scenario_weight": "0.35",
+            "global_weight": "0.75",
+            "local_weight": "0.70",
+            "effective_weight": "0.53",
+            "score": "3.00",
+            "contribution": "1.58"
+          },
+          {
+            "scenario": "Capability Growth",
+            "alternative": "No PaaS",
+            "attribute": "Sovereignty",
+            "scenario_weight": "0.35",
+            "global_weight": "0.85",
+            "local_weight": "0.75",
+            "effective_weight": "0.64",
+            "score": "5.00",
+            "contribution": "3.19"
+          },
+          {
+            "scenario": "Rapid Delivery",
+            "alternative": "PaaS",
+            "attribute": "Evolvability",
+            "scenario_weight": "0.25",
+            "global_weight": "0.45",
+            "local_weight": "0.45",
+            "effective_weight": "0.20",
+            "score": "4.00",
+            "contribution": "0.81"
+          },
+          {
+            "scenario": "Rapid Delivery",
+            "alternative": "PaaS",
+            "attribute": "Time to Field",
+            "scenario_weight": "0.25",
+            "global_weight": "0.50",
+            "local_weight": "0.55",
+            "effective_weight": "0.28",
+            "score": "5.00",
+            "contribution": "1.38"
+          },
+          {
+            "scenario": "Rapid Delivery",
+            "alternative": "PaaS",
+            "attribute": "Certification Fit",
+            "scenario_weight": "0.25",
+            "global_weight": "0.85",
+            "local_weight": "0.75",
+            "effective_weight": "0.64",
+            "score": "3.00",
+            "contribution": "1.91"
+          },
+          {
+            "scenario": "Rapid Delivery",
+            "alternative": "PaaS",
+            "attribute": "Operability",
+            "scenario_weight": "0.25",
+            "global_weight": "0.75",
+            "local_weight": "0.70",
+            "effective_weight": "0.53",
+            "score": "4.00",
+            "contribution": "2.10"
+          },
+          {
+            "scenario": "Rapid Delivery",
+            "alternative": "PaaS",
+            "attribute": "Sovereignty",
+            "scenario_weight": "0.25",
+            "global_weight": "0.80",
+            "local_weight": "0.70",
+            "effective_weight": "0.56",
+            "score": "2.00",
+            "contribution": "1.12"
+          },
+          {
+            "scenario": "Rapid Delivery",
+            "alternative": "No PaaS",
+            "attribute": "Evolvability",
+            "scenario_weight": "0.25",
+            "global_weight": "0.45",
+            "local_weight": "0.45",
+            "effective_weight": "0.20",
+            "score": "3.00",
+            "contribution": "0.61"
+          },
+          {
+            "scenario": "Rapid Delivery",
+            "alternative": "No PaaS",
+            "attribute": "Time to Field",
+            "scenario_weight": "0.25",
+            "global_weight": "0.50",
+            "local_weight": "0.55",
+            "effective_weight": "0.28",
+            "score": "2.00",
+            "contribution": "0.55"
+          },
+          {
+            "scenario": "Rapid Delivery",
+            "alternative": "No PaaS",
+            "attribute": "Certification Fit",
+            "scenario_weight": "0.25",
+            "global_weight": "0.85",
+            "local_weight": "0.75",
+            "effective_weight": "0.64",
+            "score": "5.00",
+            "contribution": "3.19"
+          },
+          {
+            "scenario": "Rapid Delivery",
+            "alternative": "No PaaS",
+            "attribute": "Operability",
+            "scenario_weight": "0.25",
+            "global_weight": "0.75",
+            "local_weight": "0.70",
+            "effective_weight": "0.53",
+            "score": "3.00",
+            "contribution": "1.58"
+          },
+          {
+            "scenario": "Rapid Delivery",
+            "alternative": "No PaaS",
+            "attribute": "Sovereignty",
+            "scenario_weight": "0.25",
+            "global_weight": "0.80",
+            "local_weight": "0.70",
+            "effective_weight": "0.56",
+            "score": "5.00",
+            "contribution": "2.80"
+          },
+          {
+            "scenario": "Sovereign Operations",
+            "alternative": "PaaS",
+            "attribute": "Evolvability",
+            "scenario_weight": "0.40",
+            "global_weight": "0.40",
+            "local_weight": "0.45",
+            "effective_weight": "0.18",
+            "score": "3.00",
+            "contribution": "0.54"
+          },
+          {
+            "scenario": "Sovereign Operations",
+            "alternative": "PaaS",
+            "attribute": "Time to Field",
+            "scenario_weight": "0.40",
+            "global_weight": "0.35",
+            "local_weight": "0.40",
+            "effective_weight": "0.14",
+            "score": "4.00",
+            "contribution": "0.56"
+          },
+          {
+            "scenario": "Sovereign Operations",
+            "alternative": "PaaS",
+            "attribute": "Certification Fit",
+            "scenario_weight": "0.40",
+            "global_weight": "0.98",
+            "local_weight": "0.95",
+            "effective_weight": "0.93",
+            "score": "2.00",
+            "contribution": "1.86"
+          },
+          {
+            "scenario": "Sovereign Operations",
+            "alternative": "PaaS",
+            "attribute": "Operability",
+            "scenario_weight": "0.40",
+            "global_weight": "0.80",
+            "local_weight": "0.80",
+            "effective_weight": "0.64",
+            "score": "4.00",
+            "contribution": "2.56"
+          },
+          {
+            "scenario": "Sovereign Operations",
+            "alternative": "PaaS",
+            "attribute": "Sovereignty",
+            "scenario_weight": "0.40",
+            "global_weight": "1.00",
+            "local_weight": "0.98",
+            "effective_weight": "0.98",
+            "score": "2.00",
+            "contribution": "1.96"
+          },
+          {
+            "scenario": "Sovereign Operations",
+            "alternative": "No PaaS",
+            "attribute": "Evolvability",
+            "scenario_weight": "0.40",
+            "global_weight": "0.40",
+            "local_weight": "0.45",
+            "effective_weight": "0.18",
+            "score": "3.00",
+            "contribution": "0.54"
+          },
+          {
+            "scenario": "Sovereign Operations",
+            "alternative": "No PaaS",
+            "attribute": "Time to Field",
+            "scenario_weight": "0.40",
+            "global_weight": "0.35",
+            "local_weight": "0.40",
+            "effective_weight": "0.14",
+            "score": "2.00",
+            "contribution": "0.28"
+          },
+          {
+            "scenario": "Sovereign Operations",
+            "alternative": "No PaaS",
+            "attribute": "Certification Fit",
+            "scenario_weight": "0.40",
+            "global_weight": "0.98",
+            "local_weight": "0.95",
+            "effective_weight": "0.93",
+            "score": "5.00",
+            "contribution": "4.66"
+          },
+          {
+            "scenario": "Sovereign Operations",
+            "alternative": "No PaaS",
+            "attribute": "Operability",
+            "scenario_weight": "0.40",
+            "global_weight": "0.80",
+            "local_weight": "0.80",
+            "effective_weight": "0.64",
+            "score": "3.00",
+            "contribution": "1.92"
+          },
+          {
+            "scenario": "Sovereign Operations",
+            "alternative": "No PaaS",
+            "attribute": "Sovereignty",
+            "scenario_weight": "0.40",
+            "global_weight": "1.00",
+            "local_weight": "0.98",
+            "effective_weight": "0.98",
+            "score": "5.00",
+            "contribution": "4.90"
+          }
+        ],
+        "saved_at": "2026-03-25T16:33:03+00:00"
+      }
+    },
+    {
+      "id": "study_d71886c7",
+      "name": "ANALYSIS",
+      "description": "Editable baseline to compare architecture options across scenarios and reusable analysis profiles.",
+      "updated_at": "2026-03-27T10:52:42+00:00",
+      "payload": {
+        "project_name": "ANALYSIS",
+        "project_description": "Editable baseline to compare architecture options across scenarios and reusable analysis profiles.",
+        "alternatives": [
+          {
+            "id": "alt_paas",
+            "name": "PaaS",
+            "description": "Platform-centric option with managed runtime capabilities."
+          },
+          {
+            "id": "alt_non_paas",
+            "name": "No PaaS",
+            "description": "Self-managed stack with tighter operational control."
+          }
+        ],
+        "attributes": [
+          {
+            "id": "attr_19d95045",
+            "name": "Evolvability",
+            "description": "Ability to integrate new subsystems and evolve functionality."
+          },
+          {
+            "id": "attr_59b9abe6",
+            "name": "Operational_resilience",
+            "description": "Fault handling, recovery, and failure containment"
+          },
+          {
+            "id": "attr_219f5a3b",
+            "name": "Configurability",
+            "description": "Configuration consistency, deployment and system management"
+          },
+          {
+            "id": "attr_213847bc",
+            "name": "Portability",
+            "description": "Ability to adapt to new platforms and environments"
+          }
+        ],
+        "scenarios": [
+          {
+            "id": "scenario_4b85ac74",
+            "name": "S1. Integration of a new susbsystem",
+            "description": "Time needed to integrate a new subsystem in the CMS",
+            "weight": 1.0
+          },
+          {
+            "id": "scenario_a207e6e8",
+            "name": "S2. CMS update",
+            "description": "Capability to deploy new functionalities. Intra/extra CMS.",
+            "weight": 1.0
+          },
+          {
+            "id": "scenario_9c7e958f",
+            "name": "S3. Service and system failure",
+            "description": "Fast diagnostics, fast fixing and resilience",
+            "weight": 1.0
+          },
+          {
+            "id": "scenario_53ad3395",
+            "name": "S4. Configuration management",
+            "description": "Total traceability and system integrity throughout the aircraft's operational life",
+            "weight": 1.0
+          },
+          {
+            "id": "scenario_af4e3015",
+            "name": "S5. Portability",
+            "description": "Deploy CMS core on the other missions without modification",
+            "weight": 1.0
+          }
+        ],
+        "profiles": [
+          {
+            "id": "profile_risk_averse",
+            "name": "Risk Aversion",
+            "description": "Favors control, certification fit, and operational predictability."
+          },
+          {
+            "id": "profile_future_proof",
+            "name": "Future Proof",
+            "description": "Favors evolvability, fast capability growth, and long-term adaptability."
+          }
+        ],
+        "benefit_cost_risk_weights": [
+          {
+            "profile_id": "profile_risk_averse",
+            "alpha": 0.4,
+            "beta": 0.6
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "alpha": 0.6,
+            "beta": 0.4
+          }
+        ],
+        "benefit_cost_risk_scores": [
+          {
+            "profile_id": "profile_risk_averse",
+            "alternative_id": "alt_paas",
+            "cost_score": 3.0,
+            "risk_score": 4.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "alternative_id": "alt_non_paas",
+            "cost_score": 2.0,
+            "risk_score": 2.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "alternative_id": "alt_paas",
+            "cost_score": 3.0,
+            "risk_score": 4.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "alternative_id": "alt_non_paas",
+            "cost_score": 4.0,
+            "risk_score": 2.0
+          }
+        ],
+        "break_even_settings": {
+          "integrations_per_year": 2.0,
+          "years": 20.0
+        },
+        "break_even_costs": [
+          {
+            "alternative_id": "alt_paas",
+            "initial_cost": 9.0,
+            "integration_cost": 1.0
+          },
+          {
+            "alternative_id": "alt_non_paas",
+            "initial_cost": 4.0,
+            "integration_cost": 3.0
+          }
+        ],
+        "weights": [
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_4b85ac74",
+            "attribute_id": "attr_19d95045",
+            "global_weight": 0.45,
+            "local_weight": 0.55
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_4b85ac74",
+            "attribute_id": "attr_59b9abe6",
+            "global_weight": 0.0,
+            "local_weight": 0.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_4b85ac74",
+            "attribute_id": "attr_219f5a3b",
+            "global_weight": 0.0,
+            "local_weight": 0.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_4b85ac74",
+            "attribute_id": "attr_213847bc",
+            "global_weight": 0.0,
+            "local_weight": 0.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_4b85ac74",
+            "attribute_id": "attr_19d95045",
+            "global_weight": 0.5,
+            "local_weight": 0.5
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_4b85ac74",
+            "attribute_id": "attr_59b9abe6",
+            "global_weight": 0.5,
+            "local_weight": 0.5
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_4b85ac74",
+            "attribute_id": "attr_219f5a3b",
+            "global_weight": 0.5,
+            "local_weight": 0.5
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_4b85ac74",
+            "attribute_id": "attr_213847bc",
+            "global_weight": 0.5,
+            "local_weight": 0.5
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_a207e6e8",
+            "attribute_id": "attr_19d95045",
+            "global_weight": 0.45,
+            "local_weight": 0.45
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_a207e6e8",
+            "attribute_id": "attr_59b9abe6",
+            "global_weight": 0.0,
+            "local_weight": 0.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_a207e6e8",
+            "attribute_id": "attr_219f5a3b",
+            "global_weight": 0.0,
+            "local_weight": 0.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_a207e6e8",
+            "attribute_id": "attr_213847bc",
+            "global_weight": 0.0,
+            "local_weight": 0.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_a207e6e8",
+            "attribute_id": "attr_19d95045",
+            "global_weight": 0.5,
+            "local_weight": 0.5
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_a207e6e8",
+            "attribute_id": "attr_59b9abe6",
+            "global_weight": 0.5,
+            "local_weight": 0.5
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_a207e6e8",
+            "attribute_id": "attr_219f5a3b",
+            "global_weight": 0.5,
+            "local_weight": 0.5
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_a207e6e8",
+            "attribute_id": "attr_213847bc",
+            "global_weight": 0.5,
+            "local_weight": 0.5
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_9c7e958f",
+            "attribute_id": "attr_19d95045",
+            "global_weight": 0.0,
+            "local_weight": 0.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_9c7e958f",
+            "attribute_id": "attr_59b9abe6",
+            "global_weight": 0.2,
+            "local_weight": 1.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_9c7e958f",
+            "attribute_id": "attr_219f5a3b",
+            "global_weight": 0.0,
+            "local_weight": 0.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_9c7e958f",
+            "attribute_id": "attr_213847bc",
+            "global_weight": 0.0,
+            "local_weight": 0.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_9c7e958f",
+            "attribute_id": "attr_19d95045",
+            "global_weight": 0.5,
+            "local_weight": 0.5
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_9c7e958f",
+            "attribute_id": "attr_59b9abe6",
+            "global_weight": 0.5,
+            "local_weight": 0.5
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_9c7e958f",
+            "attribute_id": "attr_219f5a3b",
+            "global_weight": 0.5,
+            "local_weight": 0.5
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_9c7e958f",
+            "attribute_id": "attr_213847bc",
+            "global_weight": 0.5,
+            "local_weight": 0.5
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_53ad3395",
+            "attribute_id": "attr_19d95045",
+            "global_weight": 0.0,
+            "local_weight": 0.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_53ad3395",
+            "attribute_id": "attr_59b9abe6",
+            "global_weight": 0.0,
+            "local_weight": 0.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_53ad3395",
+            "attribute_id": "attr_219f5a3b",
+            "global_weight": 0.175,
+            "local_weight": 1.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_53ad3395",
+            "attribute_id": "attr_213847bc",
+            "global_weight": 0.0,
+            "local_weight": 0.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_53ad3395",
+            "attribute_id": "attr_19d95045",
+            "global_weight": 0.5,
+            "local_weight": 0.5
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_53ad3395",
+            "attribute_id": "attr_59b9abe6",
+            "global_weight": 0.5,
+            "local_weight": 0.5
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_53ad3395",
+            "attribute_id": "attr_219f5a3b",
+            "global_weight": 0.5,
+            "local_weight": 0.5
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_53ad3395",
+            "attribute_id": "attr_213847bc",
+            "global_weight": 0.5,
+            "local_weight": 0.5
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_af4e3015",
+            "attribute_id": "attr_19d95045",
+            "global_weight": 0.0,
+            "local_weight": 0.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_af4e3015",
+            "attribute_id": "attr_59b9abe6",
+            "global_weight": 0.0,
+            "local_weight": 0.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_af4e3015",
+            "attribute_id": "attr_219f5a3b",
+            "global_weight": 0.0,
+            "local_weight": 0.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_af4e3015",
+            "attribute_id": "attr_213847bc",
+            "global_weight": 0.175,
+            "local_weight": 1.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_af4e3015",
+            "attribute_id": "attr_19d95045",
+            "global_weight": 0.5,
+            "local_weight": 0.5
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_af4e3015",
+            "attribute_id": "attr_59b9abe6",
+            "global_weight": 0.5,
+            "local_weight": 0.5
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_af4e3015",
+            "attribute_id": "attr_219f5a3b",
+            "global_weight": 0.5,
+            "local_weight": 0.5
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_af4e3015",
+            "attribute_id": "attr_213847bc",
+            "global_weight": 0.5,
+            "local_weight": 0.5
+          }
+        ],
+        "scores": [
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_4b85ac74",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_19d95045",
+            "score": 5.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_4b85ac74",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_59b9abe6",
+            "score": 5.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_4b85ac74",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_219f5a3b",
+            "score": 5.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_4b85ac74",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_213847bc",
+            "score": 5.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_4b85ac74",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_19d95045",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_4b85ac74",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_59b9abe6",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_4b85ac74",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_219f5a3b",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_4b85ac74",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_213847bc",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_4b85ac74",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_19d95045",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_4b85ac74",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_59b9abe6",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_4b85ac74",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_219f5a3b",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_4b85ac74",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_213847bc",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_4b85ac74",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_19d95045",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_4b85ac74",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_59b9abe6",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_4b85ac74",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_219f5a3b",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_4b85ac74",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_213847bc",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_a207e6e8",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_19d95045",
+            "score": 4.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_a207e6e8",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_59b9abe6",
+            "score": 4.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_a207e6e8",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_219f5a3b",
+            "score": 4.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_a207e6e8",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_213847bc",
+            "score": 4.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_a207e6e8",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_19d95045",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_a207e6e8",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_59b9abe6",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_a207e6e8",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_219f5a3b",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_a207e6e8",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_213847bc",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_a207e6e8",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_19d95045",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_a207e6e8",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_59b9abe6",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_a207e6e8",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_219f5a3b",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_a207e6e8",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_213847bc",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_a207e6e8",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_19d95045",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_a207e6e8",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_59b9abe6",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_a207e6e8",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_219f5a3b",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_a207e6e8",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_213847bc",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_9c7e958f",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_19d95045",
+            "score": 4.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_9c7e958f",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_59b9abe6",
+            "score": 4.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_9c7e958f",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_219f5a3b",
+            "score": 4.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_9c7e958f",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_213847bc",
+            "score": 4.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_9c7e958f",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_19d95045",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_9c7e958f",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_59b9abe6",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_9c7e958f",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_219f5a3b",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_9c7e958f",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_213847bc",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_9c7e958f",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_19d95045",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_9c7e958f",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_59b9abe6",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_9c7e958f",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_219f5a3b",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_9c7e958f",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_213847bc",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_9c7e958f",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_19d95045",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_9c7e958f",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_59b9abe6",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_9c7e958f",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_219f5a3b",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_9c7e958f",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_213847bc",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_53ad3395",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_19d95045",
+            "score": 5.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_53ad3395",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_59b9abe6",
+            "score": 5.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_53ad3395",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_219f5a3b",
+            "score": 5.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_53ad3395",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_213847bc",
+            "score": 5.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_53ad3395",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_19d95045",
+            "score": 2.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_53ad3395",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_59b9abe6",
+            "score": 2.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_53ad3395",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_219f5a3b",
+            "score": 2.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_53ad3395",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_213847bc",
+            "score": 2.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_53ad3395",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_19d95045",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_53ad3395",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_59b9abe6",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_53ad3395",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_219f5a3b",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_53ad3395",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_213847bc",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_53ad3395",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_19d95045",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_53ad3395",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_59b9abe6",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_53ad3395",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_219f5a3b",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_53ad3395",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_213847bc",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_af4e3015",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_19d95045",
+            "score": 5.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_af4e3015",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_59b9abe6",
+            "score": 5.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_af4e3015",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_219f5a3b",
+            "score": 5.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_af4e3015",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_213847bc",
+            "score": 5.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_af4e3015",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_19d95045",
+            "score": 2.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_af4e3015",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_59b9abe6",
+            "score": 2.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_af4e3015",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_219f5a3b",
+            "score": 2.0
+          },
+          {
+            "profile_id": "profile_risk_averse",
+            "scenario_id": "scenario_af4e3015",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_213847bc",
+            "score": 2.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_af4e3015",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_19d95045",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_af4e3015",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_59b9abe6",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_af4e3015",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_219f5a3b",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_af4e3015",
+            "alternative_id": "alt_paas",
+            "attribute_id": "attr_213847bc",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_af4e3015",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_19d95045",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_af4e3015",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_59b9abe6",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_af4e3015",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_219f5a3b",
+            "score": 3.0
+          },
+          {
+            "profile_id": "profile_future_proof",
+            "scenario_id": "scenario_af4e3015",
+            "alternative_id": "alt_non_paas",
+            "attribute_id": "attr_213847bc",
+            "score": 3.0
+          }
+        ],
+        "formulas": [
+          {
+            "id": "formula_471a443b",
+            "name": "Benefit(A)",
+            "latex": "\\sum_{i=1}^{num_scenarios}(global_weight_i \\times score_i)",
+            "description": "",
+            "builtin": false,
+            "enabled": true
+          },
+          {
+            "id": "formula_0c7965fe",
+            "name": "alpha",
+            "latex": "0.4",
+            "description": "Cost coeficient",
+            "builtin": false,
+            "enabled": false
+          },
+          {
+            "id": "formula_197085fc",
+            "name": "beta",
+            "latex": "0.6",
+            "description": "Risk coeficient",
+            "builtin": false,
+            "enabled": false
+          },
+          {
+            "id": "formula_f0e7b76b",
+            "name": "paas_implementation_cost_score",
+            "latex": "4",
+            "description": "Implementation cost based on 1-5 score",
+            "builtin": false,
+            "enabled": false
+          },
+          {
+            "id": "formula_0ace6b3c",
+            "name": "no_paas_implementation_cost_score",
+            "latex": "2",
+            "description": "Implementation cost for No PaaS solution (1-5)",
+            "builtin": false,
+            "enabled": false
+          },
+          {
+            "id": "formula_565fa771",
+            "name": "paas_architectural_risk_score",
+            "latex": "4",
+            "description": "Architectural risk score (1-5) for PaaS",
+            "builtin": false,
+            "enabled": false
+          },
+          {
+            "id": "formula_488b108b",
+            "name": "no_paas_architectural_risk_score",
+            "latex": "2",
+            "description": "Architectural risk score (1-5) for PaaS",
+            "builtin": false,
+            "enabled": false
+          },
+          {
+            "id": "formula_benefit_cost_risk",
+            "name": "Benefit to Cost and Risk",
+            "latex": "\\frac{Benefit(A)}{\\left(alpha \\cdot cost_score(A)\\right) + \\left(beta \\cdot risk_score(A)\\right)}",
+            "description": "Benefit(A) divided by the weighted sum of cost and risk.",
+            "builtin": true,
+            "enabled": true
+          }
+        ],
+        "active_profile_id": "profile_risk_averse",
+        "active_scenario_id": "scenario_4b85ac74",
+        "active_attribute_id": "attr_213847bc"
+      },
+      "result_snapshot": {
+        "aggregate_results": [
+          {
+            "alternative": "PaaS",
+            "tco": "49.00",
+            "tco_value": 49.0,
+            "benefit_a": "4.60",
+            "benefit_a_value": 4.5975,
+            "benefit_cost_risk": "1.28",
+            "benefit_cost_risk_value": 1.2771,
+            "formula_formula_471a443b": "4.60",
+            "formula_formula_471a443b_value": 4.5975,
+            "formula_formula_benefit_cost_risk": "1.28",
+            "formula_formula_benefit_cost_risk_value": 1.2771,
+            "aggregate_value": 4.5975
+          },
+          {
+            "alternative": "No PaaS",
+            "tco": "124.00",
+            "tco_value": 124.0,
+            "benefit_a": "2.65",
+            "benefit_a_value": 2.65,
+            "benefit_cost_risk": "1.32",
+            "benefit_cost_risk_value": 1.325,
+            "formula_formula_471a443b": "2.65",
+            "formula_formula_471a443b_value": 2.65,
+            "formula_formula_benefit_cost_risk": "1.32",
+            "formula_formula_benefit_cost_risk_value": 1.325,
+            "aggregate_value": 2.65
+          }
+        ],
+        "scenario_results": [
+          {
+            "scenario": "S1. Integration of a new susbsystem",
+            "alternative": "PaaS",
+            "scenario_weight": "1.00",
+            "normalized_scenario_weight": "0.20",
+            "abs_value": 1.2375,
+            "abs_display": "1.24",
+            "weighted_abs_value": 0.2475,
+            "weighted_abs_display": "0.25",
+            "formula_summary": "Benefit(A): 4.60 | Benefit to Cost and Risk: 0.34",
+            "formula_formula_471a443b": "4.60",
+            "formula_formula_benefit_cost_risk": "0.34"
+          },
+          {
+            "scenario": "S1. Integration of a new susbsystem",
+            "alternative": "No PaaS",
+            "scenario_weight": "1.00",
+            "normalized_scenario_weight": "0.20",
+            "abs_value": 0.7425,
+            "abs_display": "0.74",
+            "weighted_abs_value": 0.1485,
+            "weighted_abs_display": "0.15",
+            "formula_summary": "Benefit(A): 2.65 | Benefit to Cost and Risk: 0.37",
+            "formula_formula_471a443b": "2.65",
+            "formula_formula_benefit_cost_risk": "0.37"
+          },
+          {
+            "scenario": "S2. CMS update",
+            "alternative": "PaaS",
+            "scenario_weight": "1.00",
+            "normalized_scenario_weight": "0.20",
+            "abs_value": 0.81,
+            "abs_display": "0.81",
+            "weighted_abs_value": 0.162,
+            "weighted_abs_display": "0.16",
+            "formula_summary": "Benefit(A): 4.60 | Benefit to Cost and Risk: 0.23",
+            "formula_formula_471a443b": "4.60",
+            "formula_formula_benefit_cost_risk": "0.23"
+          },
+          {
+            "scenario": "S2. CMS update",
+            "alternative": "No PaaS",
+            "scenario_weight": "1.00",
+            "normalized_scenario_weight": "0.20",
+            "abs_value": 0.6075,
+            "abs_display": "0.61",
+            "weighted_abs_value": 0.1215,
+            "weighted_abs_display": "0.12",
+            "formula_summary": "Benefit(A): 2.65 | Benefit to Cost and Risk: 0.30",
+            "formula_formula_471a443b": "2.65",
+            "formula_formula_benefit_cost_risk": "0.30"
+          },
+          {
+            "scenario": "S3. Service and system failure",
+            "alternative": "PaaS",
+            "scenario_weight": "1.00",
+            "normalized_scenario_weight": "0.20",
+            "abs_value": 0.8,
+            "abs_display": "0.80",
+            "weighted_abs_value": 0.16,
+            "weighted_abs_display": "0.16",
+            "formula_summary": "Benefit(A): 4.60 | Benefit to Cost and Risk: 0.22",
+            "formula_formula_471a443b": "4.60",
+            "formula_formula_benefit_cost_risk": "0.22"
+          },
+          {
+            "scenario": "S3. Service and system failure",
+            "alternative": "No PaaS",
+            "scenario_weight": "1.00",
+            "normalized_scenario_weight": "0.20",
+            "abs_value": 0.6,
+            "abs_display": "0.60",
+            "weighted_abs_value": 0.12,
+            "weighted_abs_display": "0.12",
+            "formula_summary": "Benefit(A): 2.65 | Benefit to Cost and Risk: 0.30",
+            "formula_formula_471a443b": "2.65",
+            "formula_formula_benefit_cost_risk": "0.30"
+          },
+          {
+            "scenario": "S4. Configuration management",
+            "alternative": "PaaS",
+            "scenario_weight": "1.00",
+            "normalized_scenario_weight": "0.20",
+            "abs_value": 0.875,
+            "abs_display": "0.88",
+            "weighted_abs_value": 0.175,
+            "weighted_abs_display": "0.17",
+            "formula_summary": "Benefit(A): 4.60 | Benefit to Cost and Risk: 0.24",
+            "formula_formula_471a443b": "4.60",
+            "formula_formula_benefit_cost_risk": "0.24"
+          },
+          {
+            "scenario": "S4. Configuration management",
+            "alternative": "No PaaS",
+            "scenario_weight": "1.00",
+            "normalized_scenario_weight": "0.20",
+            "abs_value": 0.35,
+            "abs_display": "0.35",
+            "weighted_abs_value": 0.07,
+            "weighted_abs_display": "0.07",
+            "formula_summary": "Benefit(A): 2.65 | Benefit to Cost and Risk: 0.17",
+            "formula_formula_471a443b": "2.65",
+            "formula_formula_benefit_cost_risk": "0.17"
+          },
+          {
+            "scenario": "S5. Portability",
+            "alternative": "PaaS",
+            "scenario_weight": "1.00",
+            "normalized_scenario_weight": "0.20",
+            "abs_value": 0.875,
+            "abs_display": "0.88",
+            "weighted_abs_value": 0.175,
+            "weighted_abs_display": "0.17",
+            "formula_summary": "Benefit(A): 4.60 | Benefit to Cost and Risk: 0.24",
+            "formula_formula_471a443b": "4.60",
+            "formula_formula_benefit_cost_risk": "0.24"
+          },
+          {
+            "scenario": "S5. Portability",
+            "alternative": "No PaaS",
+            "scenario_weight": "1.00",
+            "normalized_scenario_weight": "0.20",
+            "abs_value": 0.35,
+            "abs_display": "0.35",
+            "weighted_abs_value": 0.07,
+            "weighted_abs_display": "0.07",
+            "formula_summary": "Benefit(A): 2.65 | Benefit to Cost and Risk: 0.17",
+            "formula_formula_471a443b": "2.65",
+            "formula_formula_benefit_cost_risk": "0.17"
+          }
+        ],
+        "break_even_results": [
+          {
+            "comparison": "PaaS vs No PaaS",
+            "exact_break_even": "2.50",
+            "first_whole_integration": "3",
+            "break_even_year": "1.50",
+            "status": "Within modeled horizon"
+          }
+        ],
+        "configured_variables": [
+          {
+            "scenario": "S1. Integration of a new susbsystem",
+            "alternative": "PaaS",
+            "attribute": "Evolvability",
+            "scenario_weight": "1.00",
+            "attribute_weight": "0.45",
+            "local_weight": "0.55",
+            "global_weight": "0.25",
+            "score": "5.00",
+            "contribution": "1.24"
+          },
+          {
+            "scenario": "S1. Integration of a new susbsystem",
+            "alternative": "PaaS",
+            "attribute": "Operational_resilience",
+            "scenario_weight": "1.00",
+            "attribute_weight": "0.00",
+            "local_weight": "0.00",
+            "global_weight": "0.00",
+            "score": "5.00",
+            "contribution": "0.00"
+          },
+          {
+            "scenario": "S1. Integration of a new susbsystem",
+            "alternative": "PaaS",
+            "attribute": "Configurability",
+            "scenario_weight": "1.00",
+            "attribute_weight": "0.00",
+            "local_weight": "0.00",
+            "global_weight": "0.00",
+            "score": "5.00",
+            "contribution": "0.00"
+          },
+          {
+            "scenario": "S1. Integration of a new susbsystem",
+            "alternative": "PaaS",
+            "attribute": "Portability",
+            "scenario_weight": "1.00",
+            "attribute_weight": "0.00",
+            "local_weight": "0.00",
+            "global_weight": "0.00",
+            "score": "5.00",
+            "contribution": "0.00"
+          },
+          {
+            "scenario": "S1. Integration of a new susbsystem",
+            "alternative": "No PaaS",
+            "attribute": "Evolvability",
+            "scenario_weight": "1.00",
+            "attribute_weight": "0.45",
+            "local_weight": "0.55",
+            "global_weight": "0.25",
+            "score": "3.00",
+            "contribution": "0.74"
+          },
+          {
+            "scenario": "S1. Integration of a new susbsystem",
+            "alternative": "No PaaS",
+            "attribute": "Operational_resilience",
+            "scenario_weight": "1.00",
+            "attribute_weight": "0.00",
+            "local_weight": "0.00",
+            "global_weight": "0.00",
+            "score": "3.00",
+            "contribution": "0.00"
+          },
+          {
+            "scenario": "S1. Integration of a new susbsystem",
+            "alternative": "No PaaS",
+            "attribute": "Configurability",
+            "scenario_weight": "1.00",
+            "attribute_weight": "0.00",
+            "local_weight": "0.00",
+            "global_weight": "0.00",
+            "score": "3.00",
+            "contribution": "0.00"
+          },
+          {
+            "scenario": "S1. Integration of a new susbsystem",
+            "alternative": "No PaaS",
+            "attribute": "Portability",
+            "scenario_weight": "1.00",
+            "attribute_weight": "0.00",
+            "local_weight": "0.00",
+            "global_weight": "0.00",
+            "score": "3.00",
+            "contribution": "0.00"
+          },
+          {
+            "scenario": "S2. CMS update",
+            "alternative": "PaaS",
+            "attribute": "Evolvability",
+            "scenario_weight": "1.00",
+            "attribute_weight": "0.45",
+            "local_weight": "0.45",
+            "global_weight": "0.20",
+            "score": "4.00",
+            "contribution": "0.81"
+          },
+          {
+            "scenario": "S2. CMS update",
+            "alternative": "PaaS",
+            "attribute": "Operational_resilience",
+            "scenario_weight": "1.00",
+            "attribute_weight": "0.00",
+            "local_weight": "0.00",
+            "global_weight": "0.00",
+            "score": "4.00",
+            "contribution": "0.00"
+          },
+          {
+            "scenario": "S2. CMS update",
+            "alternative": "PaaS",
+            "attribute": "Configurability",
+            "scenario_weight": "1.00",
+            "attribute_weight": "0.00",
+            "local_weight": "0.00",
+            "global_weight": "0.00",
+            "score": "4.00",
+            "contribution": "0.00"
+          },
+          {
+            "scenario": "S2. CMS update",
+            "alternative": "PaaS",
+            "attribute": "Portability",
+            "scenario_weight": "1.00",
+            "attribute_weight": "0.00",
+            "local_weight": "0.00",
+            "global_weight": "0.00",
+            "score": "4.00",
+            "contribution": "0.00"
+          },
+          {
+            "scenario": "S2. CMS update",
+            "alternative": "No PaaS",
+            "attribute": "Evolvability",
+            "scenario_weight": "1.00",
+            "attribute_weight": "0.45",
+            "local_weight": "0.45",
+            "global_weight": "0.20",
+            "score": "3.00",
+            "contribution": "0.61"
+          },
+          {
+            "scenario": "S2. CMS update",
+            "alternative": "No PaaS",
+            "attribute": "Operational_resilience",
+            "scenario_weight": "1.00",
+            "attribute_weight": "0.00",
+            "local_weight": "0.00",
+            "global_weight": "0.00",
+            "score": "3.00",
+            "contribution": "0.00"
+          },
+          {
+            "scenario": "S2. CMS update",
+            "alternative": "No PaaS",
+            "attribute": "Configurability",
+            "scenario_weight": "1.00",
+            "attribute_weight": "0.00",
+            "local_weight": "0.00",
+            "global_weight": "0.00",
+            "score": "3.00",
+            "contribution": "0.00"
+          },
+          {
+            "scenario": "S2. CMS update",
+            "alternative": "No PaaS",
+            "attribute": "Portability",
+            "scenario_weight": "1.00",
+            "attribute_weight": "0.00",
+            "local_weight": "0.00",
+            "global_weight": "0.00",
+            "score": "3.00",
+            "contribution": "0.00"
+          },
+          {
+            "scenario": "S3. Service and system failure",
+            "alternative": "PaaS",
+            "attribute": "Evolvability",
+            "scenario_weight": "1.00",
+            "attribute_weight": "0.00",
+            "local_weight": "0.00",
+            "global_weight": "0.00",
+            "score": "4.00",
+            "contribution": "0.00"
+          },
+          {
+            "scenario": "S3. Service and system failure",
+            "alternative": "PaaS",
+            "attribute": "Operational_resilience",
+            "scenario_weight": "1.00",
+            "attribute_weight": "0.20",
+            "local_weight": "1.00",
+            "global_weight": "0.20",
+            "score": "4.00",
+            "contribution": "0.80"
+          },
+          {
+            "scenario": "S3. Service and system failure",
+            "alternative": "PaaS",
+            "attribute": "Configurability",
+            "scenario_weight": "1.00",
+            "attribute_weight": "0.00",
+            "local_weight": "0.00",
+            "global_weight": "0.00",
+            "score": "4.00",
+            "contribution": "0.00"
+          },
+          {
+            "scenario": "S3. Service and system failure",
+            "alternative": "PaaS",
+            "attribute": "Portability",
+            "scenario_weight": "1.00",
+            "attribute_weight": "0.00",
+            "local_weight": "0.00",
+            "global_weight": "0.00",
+            "score": "4.00",
+            "contribution": "0.00"
+          },
+          {
+            "scenario": "S3. Service and system failure",
+            "alternative": "No PaaS",
+            "attribute": "Evolvability",
+            "scenario_weight": "1.00",
+            "attribute_weight": "0.00",
+            "local_weight": "0.00",
+            "global_weight": "0.00",
+            "score": "3.00",
+            "contribution": "0.00"
+          },
+          {
+            "scenario": "S3. Service and system failure",
+            "alternative": "No PaaS",
+            "attribute": "Operational_resilience",
+            "scenario_weight": "1.00",
+            "attribute_weight": "0.20",
+            "local_weight": "1.00",
+            "global_weight": "0.20",
+            "score": "3.00",
+            "contribution": "0.60"
+          },
+          {
+            "scenario": "S3. Service and system failure",
+            "alternative": "No PaaS",
+            "attribute": "Configurability",
+            "scenario_weight": "1.00",
+            "attribute_weight": "0.00",
+            "local_weight": "0.00",
+            "global_weight": "0.00",
+            "score": "3.00",
+            "contribution": "0.00"
+          },
+          {
+            "scenario": "S3. Service and system failure",
+            "alternative": "No PaaS",
+            "attribute": "Portability",
+            "scenario_weight": "1.00",
+            "attribute_weight": "0.00",
+            "local_weight": "0.00",
+            "global_weight": "0.00",
+            "score": "3.00",
+            "contribution": "0.00"
+          },
+          {
+            "scenario": "S4. Configuration management",
+            "alternative": "PaaS",
+            "attribute": "Evolvability",
+            "scenario_weight": "1.00",
+            "attribute_weight": "0.00",
+            "local_weight": "0.00",
+            "global_weight": "0.00",
+            "score": "5.00",
+            "contribution": "0.00"
+          },
+          {
+            "scenario": "S4. Configuration management",
+            "alternative": "PaaS",
+            "attribute": "Operational_resilience",
+            "scenario_weight": "1.00",
+            "attribute_weight": "0.00",
+            "local_weight": "0.00",
+            "global_weight": "0.00",
+            "score": "5.00",
+            "contribution": "0.00"
+          },
+          {
+            "scenario": "S4. Configuration management",
+            "alternative": "PaaS",
+            "attribute": "Configurability",
+            "scenario_weight": "1.00",
+            "attribute_weight": "0.17",
+            "local_weight": "1.00",
+            "global_weight": "0.17",
+            "score": "5.00",
+            "contribution": "0.88"
+          },
+          {
+            "scenario": "S4. Configuration management",
+            "alternative": "PaaS",
+            "attribute": "Portability",
+            "scenario_weight": "1.00",
+            "attribute_weight": "0.00",
+            "local_weight": "0.00",
+            "global_weight": "0.00",
+            "score": "5.00",
+            "contribution": "0.00"
+          },
+          {
+            "scenario": "S4. Configuration management",
+            "alternative": "No PaaS",
+            "attribute": "Evolvability",
+            "scenario_weight": "1.00",
+            "attribute_weight": "0.00",
+            "local_weight": "0.00",
+            "global_weight": "0.00",
+            "score": "2.00",
+            "contribution": "0.00"
+          },
+          {
+            "scenario": "S4. Configuration management",
+            "alternative": "No PaaS",
+            "attribute": "Operational_resilience",
+            "scenario_weight": "1.00",
+            "attribute_weight": "0.00",
+            "local_weight": "0.00",
+            "global_weight": "0.00",
+            "score": "2.00",
+            "contribution": "0.00"
+          },
+          {
+            "scenario": "S4. Configuration management",
+            "alternative": "No PaaS",
+            "attribute": "Configurability",
+            "scenario_weight": "1.00",
+            "attribute_weight": "0.17",
+            "local_weight": "1.00",
+            "global_weight": "0.17",
+            "score": "2.00",
+            "contribution": "0.35"
+          },
+          {
+            "scenario": "S4. Configuration management",
+            "alternative": "No PaaS",
+            "attribute": "Portability",
+            "scenario_weight": "1.00",
+            "attribute_weight": "0.00",
+            "local_weight": "0.00",
+            "global_weight": "0.00",
+            "score": "2.00",
+            "contribution": "0.00"
+          },
+          {
+            "scenario": "S5. Portability",
+            "alternative": "PaaS",
+            "attribute": "Evolvability",
+            "scenario_weight": "1.00",
+            "attribute_weight": "0.00",
+            "local_weight": "0.00",
+            "global_weight": "0.00",
+            "score": "5.00",
+            "contribution": "0.00"
+          },
+          {
+            "scenario": "S5. Portability",
+            "alternative": "PaaS",
+            "attribute": "Operational_resilience",
+            "scenario_weight": "1.00",
+            "attribute_weight": "0.00",
+            "local_weight": "0.00",
+            "global_weight": "0.00",
+            "score": "5.00",
+            "contribution": "0.00"
+          },
+          {
+            "scenario": "S5. Portability",
+            "alternative": "PaaS",
+            "attribute": "Configurability",
+            "scenario_weight": "1.00",
+            "attribute_weight": "0.00",
+            "local_weight": "0.00",
+            "global_weight": "0.00",
+            "score": "5.00",
+            "contribution": "0.00"
+          },
+          {
+            "scenario": "S5. Portability",
+            "alternative": "PaaS",
+            "attribute": "Portability",
+            "scenario_weight": "1.00",
+            "attribute_weight": "0.17",
+            "local_weight": "1.00",
+            "global_weight": "0.17",
+            "score": "5.00",
+            "contribution": "0.88"
+          },
+          {
+            "scenario": "S5. Portability",
+            "alternative": "No PaaS",
+            "attribute": "Evolvability",
+            "scenario_weight": "1.00",
+            "attribute_weight": "0.00",
+            "local_weight": "0.00",
+            "global_weight": "0.00",
+            "score": "2.00",
+            "contribution": "0.00"
+          },
+          {
+            "scenario": "S5. Portability",
+            "alternative": "No PaaS",
+            "attribute": "Operational_resilience",
+            "scenario_weight": "1.00",
+            "attribute_weight": "0.00",
+            "local_weight": "0.00",
+            "global_weight": "0.00",
+            "score": "2.00",
+            "contribution": "0.00"
+          },
+          {
+            "scenario": "S5. Portability",
+            "alternative": "No PaaS",
+            "attribute": "Configurability",
+            "scenario_weight": "1.00",
+            "attribute_weight": "0.00",
+            "local_weight": "0.00",
+            "global_weight": "0.00",
+            "score": "2.00",
+            "contribution": "0.00"
+          },
+          {
+            "scenario": "S5. Portability",
+            "alternative": "No PaaS",
+            "attribute": "Portability",
+            "scenario_weight": "1.00",
+            "attribute_weight": "0.17",
+            "local_weight": "1.00",
+            "global_weight": "0.17",
+            "score": "2.00",
+            "contribution": "0.35"
+          }
+        ],
+        "saved_at": "2026-03-27T10:52:43+00:00"
+      }
+    }
+  ]
+}

@@ -3001,6 +3001,158 @@ def overview_tab() -> rx.Component:
     )
 
 
+def instructions_tab() -> rx.Component:
+    return rx.vstack(
+        panel(
+            "How to Run a Trade-Off Analysis",
+            "Follow this workflow to build a study from scratch and interpret the results with a simple hypothetical example.",
+            rx.vstack(
+                rx.box(
+                    rx.heading("1. Define the study context", size="5", color=TEXT_STRONG),
+                    rx.text(
+                        "Start in Overview. Give the study a clear name and a short description of the decision you need to support.",
+                        color=TEXT_MUTED,
+                    ),
+                    rx.text(
+                        "Example: compare two deployment strategies for a mission system that must evolve over time while keeping control over cost and operational risk.",
+                        color=TEXT_MUTED,
+                    ),
+                    spacing="2",
+                    width="100%",
+                ),
+                rx.box(
+                    rx.heading("2. Create the decision profiles", size="5", color=TEXT_STRONG),
+                    rx.text(
+                        "Add one or more profiles that represent different decision lenses, such as Risk Aversion, Future Proof, or Cost Sensitivity.",
+                        color=TEXT_MUTED,
+                    ),
+                    rx.text(
+                        "Each profile lets you configure different attribute weights, local weights, scores, and cost-risk parameters.",
+                        color=TEXT_MUTED,
+                    ),
+                    spacing="2",
+                    width="100%",
+                ),
+                rx.box(
+                    rx.heading("3. Model the trade alternatives", size="5", color=TEXT_STRONG),
+                    rx.text(
+                        "In Modeling > Alternatives, add the options you want to compare. Keep the names short and descriptive.",
+                        color=TEXT_MUTED,
+                    ),
+                    rx.text(
+                        "Example alternatives: Managed Platform and Self-Managed Stack.",
+                        color=TEXT_MUTED,
+                    ),
+                    spacing="2",
+                    width="100%",
+                ),
+                rx.box(
+                    rx.heading("4. Add attributes and scenarios", size="5", color=TEXT_STRONG),
+                    rx.text(
+                        "Add the quality attributes that matter for the decision, then define the scenarios that represent the situations you want to test.",
+                        color=TEXT_MUTED,
+                    ),
+                    rx.text(
+                        "Example attributes: Evolvability, Time to Field, Operability, and Sovereignty. Example scenarios: Capability Growth, Rapid Delivery, and Restricted Deployment.",
+                        color=TEXT_MUTED,
+                    ),
+                    spacing="2",
+                    width="100%",
+                ),
+                rx.box(
+                    rx.heading("5. Configure weights and scores", size="5", color=TEXT_STRONG),
+                    rx.text(
+                        "For each profile and scenario, set Attribute Weight and Local Weight in the Profile Weight Matrix. Then set the 1-to-5 scores of each alternative in the Profile Score Matrix.",
+                        color=TEXT_MUTED,
+                    ),
+                    rx.text(
+                        "Use scenario weights to indicate how important each scenario is in the final aggregate analysis.",
+                        color=TEXT_MUTED,
+                    ),
+                    spacing="2",
+                    width="100%",
+                ),
+                rx.box(
+                    rx.heading("6. Add cost and break-even models", size="5", color=TEXT_STRONG),
+                    rx.text(
+                        "Use Benefit to Cost and Risk Model to define alpha, beta, cost score, and risk score. Use Break-Even Cost Model to define initial cost, integration cost, integrations per year, and project lifetime.",
+                        color=TEXT_MUTED,
+                    ),
+                    rx.text(
+                        "This lets you compare benefit, benefit-to-cost-and-risk, and long-term total cost of ownership in the same study.",
+                        color=TEXT_MUTED,
+                    ),
+                    spacing="2",
+                    width="100%",
+                ),
+                rx.box(
+                    rx.heading("7. Build or reuse formulas", size="5", color=TEXT_STRONG),
+                    rx.text(
+                        "In Formula Lab, use the Formula Builder to create LaTeX-like formulas with built-in variables, wildcard summations, or indexed summations.",
+                        color=TEXT_MUTED,
+                    ),
+                    rx.text(
+                        "Enable only the formulas you want to include in the final result tables and charts.",
+                        color=TEXT_MUTED,
+                    ),
+                    spacing="2",
+                    width="100%",
+                ),
+                rx.box(
+                    rx.heading("8. Read the results", size="5", color=TEXT_STRONG),
+                    rx.text(
+                        "Open Results to compare alternatives by formula, inspect scenario-by-scenario outcomes, review aggregate charts, and study break-even thresholds.",
+                        color=TEXT_MUTED,
+                    ),
+                    rx.text(
+                        "A good practice is to check whether the same alternative remains strong across multiple profiles and scenarios before making a recommendation.",
+                        color=TEXT_MUTED,
+                    ),
+                    spacing="2",
+                    width="100%",
+                ),
+                spacing="4",
+                width="100%",
+            ),
+        ),
+        panel(
+            "Hypothetical Example",
+            "This example shows how a team might use the tool to compare two architectural options.",
+            rx.box(
+                rx.text(
+                    "Study: ANALYSIS Deployment Decision",
+                    font_weight="700",
+                    color=TEXT_STRONG,
+                ),
+                rx.text(
+                    "Alternatives: Managed Platform and Self-Managed Stack.",
+                    color=TEXT_MUTED,
+                ),
+                rx.text(
+                    "Profile: Future Proof. Scenarios: Capability Growth, Fast Delivery, Restricted Environment.",
+                    color=TEXT_MUTED,
+                ),
+                rx.text(
+                    "Attributes: Evolvability, Operability, Time to Field, Sovereignty.",
+                    color=TEXT_MUTED,
+                ),
+                rx.text(
+                    "Interpretation: the Managed Platform might score higher on Benefit(A) in fast-delivery scenarios, while the Self-Managed Stack might perform better in sovereignty-heavy scenarios. The break-even model can then show whether the initially more expensive option becomes cheaper after enough integrations over the product lifetime.",
+                    color=TEXT_MUTED,
+                ),
+                rx.text(
+                    "Decision logic: if one option delivers stronger aggregate benefit and an acceptable long-term TCO under the most relevant profile, it becomes the preferred recommendation.",
+                    color=TEXT_MUTED,
+                ),
+                spacing="3",
+                width="100%",
+            ),
+        ),
+        spacing="5",
+        width="100%",
+    )
+
+
 def modeling_tab() -> rx.Component:
     return rx.vstack(
         alternatives_panel(),
@@ -3032,7 +3184,7 @@ def index() -> rx.Component:
                 rx.box(
                     rx.vstack(
                         rx.text(
-                            "TRAN Studio (Trade-Off Analysis Studio)",
+                            "TRADA Studio (Trade-Off Analysis Studio)",
                             size="2",
                             letter_spacing="0.14em",
                             text_transform="uppercase",
@@ -3062,11 +3214,13 @@ def index() -> rx.Component:
                 rx.tabs.root(
                     rx.tabs.list(
                         rx.tabs.trigger("Overview", value="overview"),
+                        rx.tabs.trigger("Instructions", value="instructions"),
                         rx.tabs.trigger("Modeling", value="modeling"),
                         rx.tabs.trigger("Formula Lab", value="formula_lab"),
                         rx.tabs.trigger("Results", value="results"),
                     ),
                     rx.tabs.content(overview_tab(), value="overview"),
+                    rx.tabs.content(instructions_tab(), value="instructions"),
                     rx.tabs.content(modeling_tab(), value="modeling"),
                     rx.tabs.content(formula_lab_tab(), value="formula_lab"),
                     rx.tabs.content(results_tab(), value="results"),
@@ -3095,4 +3249,4 @@ app = rx.App(
     ],
     style={"font_family": FONT_BODY},
 )
-app.add_page(index, title="TRAN Studio (Trade-Off Analysis Studio)", on_load=TradeoffState.load_saved_state)
+app.add_page(index, title="TRADA Studio (Trade-Off Analysis Studio)", on_load=TradeoffState.load_saved_state)

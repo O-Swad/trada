@@ -7,7 +7,7 @@ from typing import Any
 
 
 SAMPLE_DATA: dict[str, Any] = {
-    "project_name": "Maritime Mission Software Trade-Off",
+    "project_name": "ANALYSIS Software Trade-Off",
     "project_description": (
         "Editable baseline to compare architecture options across scenarios and reusable analysis profiles."
     ),

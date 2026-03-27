@@ -6,7 +6,6 @@ __pycache__/
 .venv
 .uv-cache
 .reflex-home
-storage/
 .DS_Store
 *.db
 *.py[cod]
