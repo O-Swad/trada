@@ -2,7 +2,7 @@
 
 ## Goal
 
-Keep the implementation simple, readable, and practical while separating domain rules from the Reflex UI.
+Keep the implementation simple, readable, and practical while separating domain rules from the Reflex UI for a generic trade-off analysis workflow.
 
 ## Layers
 

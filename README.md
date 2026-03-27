@@ -1,6 +1,6 @@
-# Trade-Off Workbench
+# TRADA Studio
 
-Trade-Off Workbench is a Reflex web application for building reusable multi-criteria trade studies across alternatives, quality attributes, weighted scenarios, and decision profiles.
+TRADA Studio is a Reflex web application for building reusable multi-criteria trade studies across alternatives, quality attributes, weighted scenarios, and decision profiles.
 
 ## Current capabilities
 

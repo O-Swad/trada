@@ -26,20 +26,20 @@ SAMPLE_DATA: dict[str, Any] = {
     "attributes": [
         {"id": "attr_evolvability", "name": "Evolvability", "description": "Ease of extension and change over time."},
         {"id": "attr_time_to_field", "name": "Time to Field", "description": "Ability to deliver capability quickly."},
-        {"id": "attr_certification_fit", "name": "Certification Fit", "description": "Alignment with DAL-E evidence and certification activities."},
+        {"id": "attr_certification_fit", "name": "Compliance Fit", "description": "Alignment with compliance, assurance, and review activities."},
         {"id": "attr_operability", "name": "Operability", "description": "Supportability, observability, and operational resilience."},
-        {"id": "attr_sovereignty", "name": "Sovereignty", "description": "Control over deployment, runtime, and restricted environments."},
+        {"id": "attr_sovereignty", "name": "Operational Control", "description": "Control over deployment, runtime, and constrained operating conditions."},
     ],
     "scenarios": [
         {"id": "scenario_growth", "name": "Capability Growth", "description": "Frequent feature evolution and adaptation.", "weight": 0.35},
         {"id": "scenario_delivery", "name": "Rapid Delivery", "description": "Compressed delivery timeline and pressure on speed.", "weight": 0.25},
-        {"id": "scenario_sovereign", "name": "Sovereign Operations", "description": "Control, certification rigor, and deployment sovereignty.", "weight": 0.40},
+        {"id": "scenario_sovereign", "name": "Controlled Operations", "description": "Higher emphasis on control, assurance, and constrained operating conditions.", "weight": 0.40},
     ],
     "profiles": [
         {
             "id": "profile_risk_averse",
             "name": "Risk Aversion",
-            "description": "Favors control, certification fit, and operational predictability.",
+            "description": "Favors control, compliance fit, and operational predictability.",
         },
         {
             "id": "profile_future_proof",

@@ -3014,7 +3014,7 @@ def instructions_tab() -> rx.Component:
                         color=TEXT_MUTED,
                     ),
                     rx.text(
-                        "Example: compare two deployment strategies for a mission system that must evolve over time while keeping control over cost and operational risk.",
+                        "Example: compare two deployment strategies for a software platform that must evolve over time while keeping control over cost and operational risk.",
                         color=TEXT_MUTED,
                     ),
                     spacing="2",
@@ -3129,15 +3129,15 @@ def instructions_tab() -> rx.Component:
                     color=TEXT_MUTED,
                 ),
                 rx.text(
-                    "Profile: Future Proof. Scenarios: Capability Growth, Fast Delivery, Restricted Environment.",
+                    "Profile: Future Proof. Scenarios: Capability Growth, Fast Delivery, Controlled Operations.",
                     color=TEXT_MUTED,
                 ),
                 rx.text(
-                    "Attributes: Evolvability, Operability, Time to Field, Sovereignty.",
+                    "Attributes: Evolvability, Operability, Time to Field, Operational Control.",
                     color=TEXT_MUTED,
                 ),
                 rx.text(
-                    "Interpretation: the Managed Platform might score higher on Benefit(A) in fast-delivery scenarios, while the Self-Managed Stack might perform better in sovereignty-heavy scenarios. The break-even model can then show whether the initially more expensive option becomes cheaper after enough integrations over the product lifetime.",
+                    "Interpretation: the Managed Platform might score higher on Benefit(A) in fast-delivery scenarios, while the Self-Managed Stack might perform better in control-heavy scenarios. The break-even model can then show whether the initially more expensive option becomes cheaper after enough integrations over the product lifetime.",
                     color=TEXT_MUTED,
                 ),
                 rx.text(

@@ -72,6 +72,8 @@ The app computes:
 
 `ABS = sum(global_weight * local_weight * score)`
 
+You can use this structure for any generic decision problem where multiple options must be compared across weighted criteria and scenarios.
+
 ## 3. Formula Lab
 
 The **Formula Lab** lets you define custom metrics using a restricted LaTeX-like syntax.
