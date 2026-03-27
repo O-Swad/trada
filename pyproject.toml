@@ -1,0 +1,14 @@
+[project]
+name = "tradeoff-app"
+version = "0.1.0"
+description = "Aplicacion web generica para construir trade-offs multicriterio con Reflex."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "reflex==0.8.28.post1",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+

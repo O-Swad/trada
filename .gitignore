@@ -1,0 +1,12 @@
+.states
+.scratch
+assets/external/
+__pycache__/
+.web
+.venv
+.uv-cache
+.reflex-home
+storage/
+.DS_Store
+*.db
+*.py[cod]
