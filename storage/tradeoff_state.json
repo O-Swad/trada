@@ -1157,7 +1157,7 @@
       "id": "study_d71886c7",
       "name": "ANALYSIS",
       "description": "Editable baseline to compare architecture options across scenarios and reusable analysis profiles.",
-      "updated_at": "2026-03-27T14:27:09+00:00",
+      "updated_at": "2026-03-27T14:34:54+00:00",
       "payload": {
         "project_name": "ANALYSIS",
         "project_description": "Editable baseline to compare architecture options across scenarios and reusable analysis profiles.",
@@ -2821,7 +2821,7 @@
             "contribution": "0.35"
           }
         ],
-        "saved_at": "2026-03-27T14:27:09+00:00"
+        "saved_at": "2026-03-27T14:34:54+00:00"
       }
     }
   ]

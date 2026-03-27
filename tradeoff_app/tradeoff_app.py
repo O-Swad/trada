@@ -3213,14 +3213,14 @@ def index() -> rx.Component:
                 status_banner(),
                 rx.tabs.root(
                     rx.tabs.list(
-                        rx.tabs.trigger("Overview", value="overview"),
                         rx.tabs.trigger("Instructions", value="instructions"),
+                        rx.tabs.trigger("Overview", value="overview"),
                         rx.tabs.trigger("Modeling", value="modeling"),
                         rx.tabs.trigger("Formula Lab", value="formula_lab"),
                         rx.tabs.trigger("Results", value="results"),
                     ),
-                    rx.tabs.content(overview_tab(), value="overview"),
                     rx.tabs.content(instructions_tab(), value="instructions"),
+                    rx.tabs.content(overview_tab(), value="overview"),
                     rx.tabs.content(modeling_tab(), value="modeling"),
                     rx.tabs.content(formula_lab_tab(), value="formula_lab"),
                     rx.tabs.content(results_tab(), value="results"),
