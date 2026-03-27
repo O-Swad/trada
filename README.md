@@ -59,3 +59,27 @@ REFLEX_DIR=.reflex-home .venv/bin/reflex compile
 - The application stores its shared state in `storage/tradeoff_state.json`.
 - The dataset is saved automatically after every meaningful change.
 - You can also force a save or reload the saved snapshot from the Overview tab.
+
+## Linux bundle
+
+Build a portable Linux bundle from a Linux environment with:
+
+```bash
+bash scripts/build_linux_bundle.sh
+```
+
+This creates:
+
+- `dist/trada-studio-linux-x86_64.tar.gz`
+
+This archive is the offline delivery artifact. You can copy it to a Linux machine without internet access and run it there.
+
+After extracting that archive on Linux, launch the application with:
+
+```bash
+./trada-studio/trada-studio
+```
+
+The repository also includes a GitHub Actions workflow in `.github/workflows/build-linux-bundle.yml` that builds the same Linux bundle automatically and uploads it as a workflow artifact.
+
+See also: `docs/offline_linux_bundle.md`
